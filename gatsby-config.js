@@ -9,8 +9,52 @@ module.exports = {
         link: "/",
       },
       {
-        name: "page2",
+        name: "page 2",
         link: "/page-2",
+      },
+      {
+        name: "this",
+        link: "/this",
+      },
+      {
+        name: "navigation",
+        link: "/navigation",
+      },
+      {
+        name: "menu",
+        link: "/menu",
+      },
+      {
+        name: "sure",
+        link: "/sure",
+      },
+      {
+        name: "has",
+        link: "/has",
+      },
+      {
+        name: "a",
+        link: "/a",
+      },
+      {
+        name: "lot",
+        link: "/lot",
+      },
+      {
+        name: "of",
+        link: "/of",
+      },
+      {
+        name: "links",
+        link: "/links",
+      },
+      {
+        name: "in",
+        link: "/in",
+      },
+      {
+        name: "it",
+        link: "/it",
       },
     ],
   },
