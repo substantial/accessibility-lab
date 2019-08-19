@@ -1,4 +1,5 @@
-const NAV_MENU_LINKS = `these are nav links to other pages that do not even exist but you still have to deal with them`
+const NAV_MENU_LINKS = `when there are many nav links it can be hard to reach the main content quickly which is very annoying`
+const FOOTER_MENU_LINKS = `yep there are a lot of page links down here too so it goes`
 
 const generateMenuLinks = sentence => {
   const menuLinks = []
@@ -13,10 +14,11 @@ const generateMenuLinks = sentence => {
 
 module.exports = {
   siteMetadata: {
-    title: `Supercalifragilisticexpialidocious Accessibility Lab`,
+    title: `Supercalifragilisticexpialidocious Antidisestablishmentarianism Accessibility Lab`,
     description: `Accessibility is cool.`,
     author: `Rendezvous Planning Committee`,
-    menuLinks: generateMenuLinks(NAV_MENU_LINKS),
+    navLinks: generateMenuLinks(NAV_MENU_LINKS),
+    footerLinks: generateMenuLinks(FOOTER_MENU_LINKS),
   },
   plugins: [
     `gatsby-plugin-emotion`,

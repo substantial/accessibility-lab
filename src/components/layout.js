@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
+import Footer from "./Footer"
 
 const StyledLayout = styled.div({
   margin: "2rem",
@@ -19,21 +20,17 @@ const StyledLayout = styled.div({
   color: "gray",
 })
 
-const StyledFooter = styled.footer({
-  marginTop: "1rem",
-})
-
-const StyledAnchor = styled.a({
-  color: "black",
-})
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
-          menuLinks {
+          navLinks {
+            name
+            link
+          }
+          footerLinks {
             name
             link
           }
@@ -45,15 +42,11 @@ const Layout = ({ children }) => {
   return (
     <StyledLayout>
       <Header
-        menuLinks={data.site.siteMetadata.menuLinks}
+        navLinks={data.site.siteMetadata.navLinks}
         siteTitle={data.site.siteMetadata.title}
       />
       <main>{children}</main>
-      <StyledFooter>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <StyledAnchor href="https://www.gatsbyjs.org">Gatsby</StyledAnchor>
-      </StyledFooter>
+      <Footer footerLinks={data.site.siteMetadata.footerLinks}></Footer>
     </StyledLayout>
   )
 }

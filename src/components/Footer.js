@@ -3,13 +3,13 @@ import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
 
-const StyledNav = styled.nav({
+const StyledFooter = styled.footer({
   border: "1px dashed gray",
   marginBottom: "1rem",
   padding: "1rem",
 })
 
-const StyledMenu = styled.ul({
+const StyledFooterLinks = styled.ul({
   listStyleType: "none",
   paddingInlineStart: 0,
   margin: 0,
@@ -19,7 +19,7 @@ const StyledMenu = styled.ul({
   gridColumnGap: "1rem",
 })
 
-const StyledMenuItem = styled.li({
+const StyledFooterLinkItem = styled.li({
   textTransform: "capitalize",
   whiteSpace: "nowrap",
 })
@@ -28,20 +28,20 @@ const StyledLink = styled(Link)({
   color: "black",
 })
 
-const Nav = ({ navLinks }) => (
-  <StyledNav>
-    <StyledMenu>
-      {navLinks.map((item, index) => (
-        <StyledMenuItem key={`${index} ${item.name}`}>
+const Footer = ({ footerLinks }) => (
+  <StyledFooter>
+    <StyledFooterLinks>
+      {footerLinks.map((item, index) => (
+        <StyledFooterLinkItem key={`${index} ${item.name}`}>
           <StyledLink to={item.link}>{item.name}</StyledLink>
-        </StyledMenuItem>
+        </StyledFooterLinkItem>
       ))}
-    </StyledMenu>
-  </StyledNav>
+    </StyledFooterLinks>
+  </StyledFooter>
 )
 
-Nav.propTypes = {
-  navLinks: PropTypes.arrayOf(
+Footer.propTypes = {
+  footerLinks: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       link: PropTypes.string.isRequired,
@@ -49,4 +49,4 @@ Nav.propTypes = {
   ),
 }
 
-export default Nav
+export default Footer
