@@ -1,62 +1,22 @@
+const NAV_MENU_LINKS = `these are nav links to other pages that do not even exist but you still have to deal with them`
+
+const generateMenuLinks = sentence => {
+  const menuLinks = []
+  sentence.split(" ").forEach(word => {
+    menuLinks.push({
+      name: `${word}`,
+      link: `/${word}`,
+    })
+  })
+  return menuLinks
+}
+
 module.exports = {
   siteMetadata: {
-    title: `Accessibility Lab`,
+    title: `Supercalifragilisticexpialidocious Accessibility Lab`,
     description: `Accessibility is cool.`,
     author: `Rendezvous Planning Committee`,
-    menuLinks: [
-      {
-        name: "home",
-        link: "/",
-      },
-      {
-        name: "page 2",
-        link: "/page-2",
-      },
-      {
-        name: "this",
-        link: "/this",
-      },
-      {
-        name: "navigation",
-        link: "/navigation",
-      },
-      {
-        name: "menu",
-        link: "/menu",
-      },
-      {
-        name: "sure",
-        link: "/sure",
-      },
-      {
-        name: "has",
-        link: "/has",
-      },
-      {
-        name: "a",
-        link: "/a",
-      },
-      {
-        name: "lot",
-        link: "/lot",
-      },
-      {
-        name: "of",
-        link: "/of",
-      },
-      {
-        name: "links",
-        link: "/links",
-      },
-      {
-        name: "in",
-        link: "/in",
-      },
-      {
-        name: "it",
-        link: "/it",
-      },
-    ],
+    menuLinks: generateMenuLinks(NAV_MENU_LINKS),
   },
   plugins: [
     `gatsby-plugin-emotion`,

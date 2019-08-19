@@ -16,6 +16,15 @@ const StyledLayout = styled.div({
   padding: "2rem",
   backgroundColor: "#EFF1F9",
   fontFamily: "Arial",
+  color: "gray",
+})
+
+const StyledFooter = styled.footer({
+  marginTop: "1rem",
+})
+
+const StyledAnchor = styled.a({
+  color: "black",
 })
 
 const Layout = ({ children }) => {
@@ -40,11 +49,11 @@ const Layout = ({ children }) => {
         siteTitle={data.site.siteMetadata.title}
       />
       <main>{children}</main>
-      <footer>
+      <StyledFooter>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+        <StyledAnchor href="https://www.gatsbyjs.org">Gatsby</StyledAnchor>
+      </StyledFooter>
     </StyledLayout>
   )
 }
