@@ -14,10 +14,13 @@ import Footer from "./Footer"
 
 const StyledLayout = styled.div({
   margin: "2rem",
-  padding: "2rem",
+  padding: "1rem",
   backgroundColor: "#EFF1F9",
   fontFamily: "Arial",
-  color: "gray",
+  color: "black",
+  "& a": {
+    color: "#505050",
+  },
 })
 
 const Layout = ({ children }) => {

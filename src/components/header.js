@@ -5,25 +5,23 @@ import { Link } from "gatsby"
 import Heading1 from "./Heading1"
 import Nav from "./Nav"
 
-const StyledWrapper = styled.div({
-  border: "1px dashed gray",
-  padding: "1rem",
+const Wrapper = styled.header({
+  padding: "0 1rem 0 1rem",
 })
 
 const StyledLink = styled(Link)({
   textDecoration: "none",
-  color: "black",
 })
 
 const Header = ({ siteTitle, navLinks }) => (
-  <header>
-    <Heading1>
-      <StyledWrapper>
-        <StyledLink to="/">{siteTitle}</StyledLink>
-      </StyledWrapper>
-    </Heading1>
+  <>
+    <Wrapper>
+      <StyledLink to="/">
+        <Heading1>{siteTitle}</Heading1>
+      </StyledLink>
+    </Wrapper>
     <Nav navLinks={navLinks} />
-  </header>
+  </>
 )
 
 Header.propTypes = {

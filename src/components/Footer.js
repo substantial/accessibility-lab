@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const StyledFooter = styled.footer({
   border: "1px dashed gray",
-  marginBottom: "1rem",
+  marginTop: "1rem",
   padding: "1rem",
 })
 
