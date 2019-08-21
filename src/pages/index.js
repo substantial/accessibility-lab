@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import Layout from "../components/Layout"
-import Heading1 from "../components/Heading1"
+import Heading2 from "../components/Heading2"
 import buffaloSvg from "../images/buffalo.svg"
 
 const Wrapper = styled.header({
@@ -18,7 +18,7 @@ const StyledImage = styled.img({
 const IndexPage = () => (
   <Layout>
     <Wrapper>
-      <Heading1>Home</Heading1>
+      <Heading2>Home</Heading2>
       <p>
         <StyledImage src={buffaloSvg} />
         <strong>
