@@ -1,8 +1,7 @@
 # Accessibility Lab
 
-1. [Install the Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start#install-the-gatsby-cli)
-1. Start dev server `gatsby develop`
-1. Visit `localhost:8000`
+1. Start dev server: `script/dev`
+1. Visit [localhost:8000](http://localhost:8000/)
 1. Test screen reader & keyboard usability 😬
 1. Make accessibility improvements! ✨
 1. Try out improvements 🎉
