@@ -36,7 +36,7 @@ const Form = () => (
     <form>
       {createFields(FIELD_LABELS)}
       <StyledLabel>Three words that describe your buffalo</StyledLabel>
-      <div>Separate words with a comma</div>
+      <div>Put each word on a separate line</div>
       <StyledField>
         <textarea></textarea>
       </StyledField>

@@ -84,7 +84,16 @@ Allow users to skip repetitive elements repeated on every page, such as the navi
 </fieldset>
 ```
 
-3. Add [`aria-describedby`](https://webaim.org/techniques/forms/advanced#describedby) to instructions for personality description.
+3. Add
+[`aria-describedby`](https://webaim.org/techniques/forms/advanced#describedby)
+to the `textarea` for describing your buffalo.
 
 Non-label text is not read by the screen reader, so field instructions
 outside a label will be missed.
+
+```
+<label for="resetpass">Reset Password:</label>
+<input type="password" name="resetpass" id="resetpass" aria-describedby="newpass"> 
+<br>
+<span id="newpass">New password must be 8-15 characters and include letters and numbers</span>
+```
