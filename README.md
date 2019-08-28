@@ -1,3 +1,49 @@
+# Accessibility Lab
+
+1. [Install the Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start#install-the-gatsby-cli)
+1. Start dev server `gatsby develop`
+1. Visit `localhost:8000`
+1. Test screen reader & keyboard usability 😬
+1. Make accessibility improvements! ✨
+1. Try out improvements 🎉
+
+# Screen reader & keyboard use
+
+## Keyboard
+
+| Action                                   | Command     |
+| ---------------------------------------- | ----------- |
+| Next (link, button)                      | tab         |
+| Prev (link, button)                      | shift + tab |
+| Trigger interactive (link, button)       | enter       |
+| Toggle interactive (checkbox, accordion) | spacebar    |
+
+## VoiceOver (Mac built-in screen reader)
+
+| Action                      | Command                                         |
+| --------------------------- | ----------------------------------------------- |
+| Turn on / off               | command + triple-press Touch ID                 |
+|                             | **( or** command + fn + F5 **)**                |
+| Start reading               | control + option + A                            |
+| Stop reading                | control                                         |
+| Next / prev interactive     | [shift] + tab                                   |
+| Trigger interactive         | control + option + spacebar                     |
+| Next/ prev heading          | control + option + command + [shift] + H        |
+| Next / prev sibling element | control + option + shift + [right / left] arrow |
+| Next child / parent element | control + option + shift + [down / up] arrow    |
+| Open web rotor              | control + option + U                            |
+| - Next / prev menu          | [right / left] arrow                            |
+| - Next / prev item          | [down / up] arrow                               |
+| - Go to selected item       | enter                                           |
+| - Close web rotor           | esc                                             |
+| Screen curtain on / off     | control + option + shift + fn + \_              |
+
+# Accessibility Improvements
+
+<!-- TODO -->
+
+---
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
