@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import Heading2 from "../components/Heading2"
 
-const FIELD_LABELS = ["Name", "Coat color", "Favorite cuisine", "Favorite band"]
+const FIELD_LABELS = ["Name", "Favorite cuisine", "Favorite band"]
 
 const StyledField = styled.div({
   marginBottom: "1rem",
@@ -27,7 +27,19 @@ const Form = () => (
     <form>
       {createFields(FIELD_LABELS)}
       <StyledLabel>Personality in 3 words</StyledLabel>
-      <textarea></textarea>
+      <div>Separate words with a comma</div>
+      <StyledField>
+        <textarea></textarea>
+      </StyledField>
+      <StyledField>
+        <StyledLabel>Coat Color</StyledLabel>
+        <input type="radio" name="color" value="black" />
+        <label>Black</label>
+        <input type="radio" name="color" value="brown" />
+        <label>Brown</label>
+        <input type="radio" name="color" value="blue" />
+        <label>Blue</label>
+      </StyledField>
     </form>
   </>
 )
