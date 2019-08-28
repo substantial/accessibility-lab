@@ -12,6 +12,15 @@ const StyledLabel = styled.label({
   display: "block",
 })
 
+const StyledSubmitButton = styled.button({
+  backgroundColor: "transparent",
+  backgroundImage: "url(/submit-button.png)",
+  backgroundSize: "cover",
+  border: "none",
+  height: "242px",
+  width: "250px",
+})
+
 const createFields = labels => {
   return labels.map((label, index) => (
     <StyledField key={`${label} ${index}`}>
@@ -26,7 +35,7 @@ const Form = () => (
     <Heading2>Tell us about your buffalo</Heading2>
     <form>
       {createFields(FIELD_LABELS)}
-      <StyledLabel>Personality in 3 words</StyledLabel>
+      <StyledLabel>Three words that describe your buffalo</StyledLabel>
       <div>Separate words with a comma</div>
       <StyledField>
         <textarea></textarea>
@@ -40,6 +49,7 @@ const Form = () => (
         <input type="radio" name="color" value="blue" />
         <label>Blue</label>
       </StyledField>
+      <StyledSubmitButton type="submit" />
     </form>
   </>
 )

@@ -44,6 +44,14 @@
 
 [Add alternative text for image](https://webaim.org/techniques/alttext/)
 
+## Add labels to links and buttons without text
+
+Add `aria-label` to links and buttons that do not have text, such as icon buttons.
+
+```
+<button aria-label="Next" />
+```
+
 ## Skip Links
 
 Allow users to skip repetitive elements repeated on every page, such as the navigation menu.
