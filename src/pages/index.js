@@ -16,6 +16,14 @@ const StyledImage = styled.img({
   margin: "0 2rem 0.5rem 0",
 })
 
+const ImageLink = styled.a({
+  backgroundImage: "url(/buffalo-cartoon.png)",
+  backgroundSize: "cover",
+  display: "inline-block",
+  height: "100px",
+  width: "125px",
+})
+
 const IndexPage = () => (
   <Layout>
     <Wrapper>
@@ -58,6 +66,9 @@ const IndexPage = () => (
           <a href="https://en.wikipedia.org/wiki/Buffalo_buffalo_Buffalo_buffalo_buffalo_buffalo_Buffalo_buffalo">
             Wikipedia
           </a>
+        </p>
+        <p>
+          <ImageLink href="http://www.wildnatureimages.com/Buffalo-Bison-Photos.htm" />
         </p>
       </section>
       <section>
