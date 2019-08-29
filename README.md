@@ -43,6 +43,12 @@
 
 [Add alternative text for image](https://webaim.org/techniques/alttext/)
 
+The `alt` text should describe the image and be kept short (under 16 words).
+Use empty `alt` attributes for presentational content like background images.
+Note: an empty `alt` is not the same as a missing `alt` attribute. If the
+`alt` attribute is missing, the screen reader will read out the image
+filename, which is usually not useful.
+
 ## Add labels to links and buttons without text
 
 Add `aria-label` to links and buttons that do not have text, such as icon buttons.
