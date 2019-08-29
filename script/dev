@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+DIR=$(pwd)
+
+# setup
+"$DIR"/script/dev-setup
+yarn install
+
+yarn gatsby develop

@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+YARN_VERSION=1.17.3
+
+cd "$(dirname "$0")/.." || exit 1
+DIR=$(pwd)
+
+for P in "$DIR"/script/dev-setup.d/*
+do
+  source "$P"
+done
+
+set -e
+
+function on-exit {
+  status=$?
+  if [ $status -ne 0 ]; then
+    echo
+    error "Setup wasn't successful"
+    error "Please check the logs above, follow any instructions and run $0 again"
+    exit $status
+  fi
+}
+trap "on-exit" EXIT
+
+info "Install dev dependencies"
+
+if ! cmd yarn; then
+  install-package --ignore-dependencies yarn
+fi
+
+if [ "$(yarn --version)" != "$YARN_VERSION" ]; then
+  error "Please use yarn version $YARN_VERSION or update the version requirement"
+  error "in 'script/dev-setup', 'Dockerfile', and 'package.json'."
+  error "You can upgrade yarn on macOS with 'brew upgrade yarn'."
+  exit 1
+fi
+
+echo -e "${GREEN}>> You're all set up!${DEFAULT}"
