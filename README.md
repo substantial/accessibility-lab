@@ -102,3 +102,11 @@ outside a label will be missed.
 <br>
 <span id="newpass">New password must be 8-15 characters and include letters and numbers</span>
 ```
+
+# Resources
+
+1. [I Used The Web For A Day With Just A Keyboard](https://www.smashingmagazine.com/2018/07/web-with-just-a-keyboard/)
+1. [I Used The Web For A Day Using A Screen Reader](https://www.smashingmagazine.com/2018/12/voiceover-screen-reader-web-apps/)
+1. [Inclusive Components](https://inclusive-components.design/)
+1. [WebAIM (web accessibility in mind)](https://webaim.org/)
+1. [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG21/)
