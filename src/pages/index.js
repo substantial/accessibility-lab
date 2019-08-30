@@ -30,7 +30,7 @@ const IndexPage = () => (
       <section>
         <Heading2>Buffalo Facts</Heading2>
         <p>
-          <StyledImage src={buffaloSvg} />
+          <StyledImage src={buffaloSvg} alt="Simplified parse tree of sentence" />
           <strong>
             "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo"
           </strong>{" "}
