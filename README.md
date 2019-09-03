@@ -62,6 +62,7 @@ Add `aria-label` to links and buttons that do not have text, such as icon button
 Allow users to skip repetitive elements repeated on every page, such as the navigation menu.
 
 [Add a "Skip to Main Content" anchor link](https://webaim.org/techniques/skipnav/)
+The link should be hidden until the user tabs to it.
 
 ## Forms
 
