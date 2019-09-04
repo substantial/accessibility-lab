@@ -39,6 +39,14 @@
 
 # Accessibility Improvements
 
+## Auditing Accessibilty
+
+### Lighthouse
+
+1. In Chrome, open the Developer Tools.
+1. Go to the Audits tab.
+1. Run an audit that includes Accessibility.
+
 ## Focus Outline
 
 [Never remove the outline](https://a11yproject.com/posts/never-remove-css-outlines/) on focus! 
