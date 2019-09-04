@@ -61,7 +61,7 @@ Add `aria-label` to links and buttons that do not have text, such as icon button
 
 Allow users to skip repetitive elements repeated on every page, such as the navigation menu.
 
-[Add a "Skip to Main Content" anchor link](https://webaim.org/techniques/skipnav/)
+Add a ["Skip to Main Content"](https://webaim.org/techniques/skipnav/) link.
 The link should be hidden until the user tabs to it.
 
 ## Forms
@@ -103,6 +103,21 @@ outside a label will be missed.
 <br>
 <span id="newpass">New password must be 8-15 characters and include letters and numbers</span>
 ```
+
+## Landmarks
+
+Landmarks allow the user to jump to sections of a page. Even if you use
+semantic HTML elements like main and nav, not all screen readers will include
+them in the landmarks list, You should add a [`role` attribute](https://webaim.org/techniques/aria/#landmarks) 
+to main sections of the page, like the main content, navigation and search.
+
+1. Add a `role` attribute to the main content.
+1. Add a `role` attribute to the navigation.
+1. Add a `role` attribute to the search form.
+
+## [Dynamic Content Updates](https://webaim.org/techniques/aria/#dynamic)
+
+1. Add an `aria-live` region for the search results.
 
 # Resources
 

@@ -5,7 +5,7 @@ import Heading2 from "../components/Heading2"
 import Form from "../components/Form"
 import buffaloSvg from "../images/buffalo.svg"
 
-const Wrapper = styled.header({
+const Wrapper = styled.div({
   padding: "0 1rem 0 1rem",
 })
 

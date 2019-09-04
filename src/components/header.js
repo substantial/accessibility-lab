@@ -2,10 +2,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
+
 import Heading1 from "./Heading1"
 import Nav from "./Nav"
+import Search from "./Search"
 
 const Wrapper = styled.header({
+  display: "flex",
   padding: "0 1rem 0 1rem",
 })
 
@@ -19,6 +22,7 @@ const Header = ({ siteTitle, navLinks }) => (
       <StyledLink to="/">
         <Heading1>{siteTitle}</Heading1>
       </StyledLink>
+      <Search />
     </Wrapper>
     <Nav navLinks={navLinks} />
   </>
