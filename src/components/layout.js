@@ -13,7 +13,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 
 const StyledLayout = styled.div({
-  margin: " 2.5rem 2rem",
+  margin: "2.5rem 2rem",
   padding: "1.1rem 1rem",
   backgroundColor: "#f5f9fa",
   fontFamily: "Arial",
@@ -21,6 +21,9 @@ const StyledLayout = styled.div({
   "& a": {
     color: "#3d7e9a",
   },
+  "*:focus": {
+    outline: "none",
+  }
 })
 
 const Layout = ({ children }) => {

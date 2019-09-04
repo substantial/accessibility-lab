@@ -39,6 +39,13 @@
 
 # Accessibility Improvements
 
+## Focus Outline
+
+[Never remove the outline](https://a11yproject.com/posts/never-remove-css-outlines/) on focus! 
+It makes is difficult to navigate with a keyboard.
+
+1. Restore the focus outline.
+
 ## Alternative Text for Images
 
 [Add alternative text for image](https://webaim.org/techniques/alttext/)
